@@ -1,5 +1,5 @@
 # java-web
-![javaWeb drawio (1)](https://github.com/Liu-Chen-CS/java-web/assets/158779475/99e34c99-8500-4f51-ad59-235d99f3679d)
+![javaWeb drawio](https://github.com/Liu-Chen-CS/java-web/assets/158779475/b759fa7b-021a-428e-a061-29bc8f389a28)
 
 ### Request Header Examples
   - `host` : ip address.
@@ -21,6 +21,8 @@
 | Status Code    | Explanation |
 | -------- | ------- |
 | 200  | The request has succeeded  |
+| 302 | Server told the client to issue a new request to the new URL provided in the `Location` |
+| 304 | Server told the client to use `cached` resources |
 | 400 | Bad Request - The server cannot process the request due to client error    |
 | 401    | Unauthorized - The client must authenticate itself to get the requested response  |
 | 403 | Forbidden - The server understood the request, but refuses to authorize it |
