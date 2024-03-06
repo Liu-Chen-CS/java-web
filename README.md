@@ -10,6 +10,7 @@
 
 ### Response Header Examples
   -  `Content-Type` : indicate what type of content is returning back to the client side.
+  -  `Content-Length` :  indicates the size of the `response body` in bytes, client can evaluate it on their end to examine issues such as truncated responses or data corruption during transmission.
   -  `Connection` : indicate that it wants to keep the `TCP connection` open after the `response` has been received.
       - **advantage** : this can lead to performance improvements, as subsequent requests can be sent over the same connection without the overhead of establishing a new `TCP connection` for each request.
       - **disadvantage** : consume server resources.
