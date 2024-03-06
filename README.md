@@ -10,6 +10,10 @@
 
 ### Response Header Examples
   -  `Content-Type` : indicate what type of content is returning back to the client side.
+  -  `Connection` : indicate that it wants to keep the `TCP connection` open after the `response` has been received.
+      - **advantage** : this can lead to performance improvements, as subsequent requests can be sent over the same connection without the overhead of establishing a new `TCP connection` for each request.
+      - **disadvantage** : consume server resources.
+  - `Keep-Alive` : specifying a `timeout value` for the Connection.
 
 ### Response status code
 
